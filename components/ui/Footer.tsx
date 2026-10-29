@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import Image from 'next/image';
 export default function Footer() {
   return (
     <footer className="bg-brand-navy text-white pt-16 pb-12 mt-auto">
@@ -7,11 +8,15 @@ export default function Footer() {
         
         {/* Col 1: Brand info */}
         <div className="md:col-span-4 space-y-4">
-          <Link href="/guidance" className="flex items-center space-x-3 hover:opacity-90 transition-opacity">
-            <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center text-white font-black text-xs">
-            EH
+          <Link href="/guidance" className="flex items-center hover:opacity-90 transition-opacity">
+            <div className="relative w-28 h-10 sm:w-36 sm:h-12 shrink-0">
+              <Image
+                src="https://tajora.co.uk/wp-content/uploads/2026/10/tajora-up-w-2b77d4.svg"
+                alt="Tajora Logo"
+                fill
+                className="object-contain object-left"
+              />
             </div>
-            <span className="text-lg font-bold tracking-tight">EHCP Helper</span>
           </Link>
           <p className="text-gray-300 text-xs leading-relaxed pr-6">
             Providing high-quality, free and accessible special needs advocacy resources across the UK.

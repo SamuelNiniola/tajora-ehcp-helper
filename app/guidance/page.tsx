@@ -4,11 +4,14 @@ import { useState } from 'react';
 import Link from "next/link";
 
 export default function GuidanceHubPage() {
-  const [submitted, setSubmitted] = useState(false);
+  const [completed, setCompleted] = useState(false);
+  const [region, setRegion] = useState('England (SEND Code of Practice)');
+  const [stage, setStage] = useState('Thinking about requesting an EHCP assessment');
+  const [concern, setConcern] = useState('School refusing to support or apply');
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setCompleted(true);
   };
 
   const guidanceCards = [
@@ -74,63 +77,117 @@ export default function GuidanceHubPage() {
 
           {/* Right Support Checker Widget */}
           <div className="lg:col-span-5 bg-white p-6 sm:p-8 rounded-2xl shadow-xl border border-gray-100">
-            <div className="flex items-center space-x-2 mb-4 text-brand-navy font-bold text-sm">
+            <div className="flex items-center space-x-2 mb-2 text-brand-navy font-bold text-sm">
               <span>✓ Support Checker</span>
             </div>
-            <p className="text-xs text-gray-500 mb-4">Find out where your child stands in 3 quick steps.</p>
+            <p className="text-xs text-gray-500 mb-6">Find out where your child stands in 3 quick steps.</p>
 
-            {submitted ? (
-              <div className="bg-green-50 border border-green-200 text-green-800 p-6 rounded-xl text-center space-y-3 my-4">
-                <div className="text-3xl">📩</div>
-                <h3 className="font-bold text-sm text-green-900">Request Received!</h3>
-                <p className="text-xs text-green-700 leading-relaxed font-semibold">
-                  Our Team Will reach out to you as soon as possible.
-                </p>
-                <button
-                  type="button"
-                  onClick={() => setSubmitted(false)}
-                  className="mt-2 text-[11px] text-brand-navy underline font-bold"
-                >
-                  Reset Form
-                </button>
-              </div>
-            ) : (
+            {!completed ? (
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block text-xs font-semibold text-gray-600 mb-1">Where do you live in the UK?</label>
-                  <input 
-                    type="text" 
-                    defaultValue="Essex, Colchester" 
-                    required
-                    className="w-full bg-gray-50 border border-gray-300 rounded-lg p-3 text-sm focus:ring-2 focus:ring-brand-orange outline-none text-gray-800"
-                  />
+                  <label className="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-1.5">
+                    1. Where do you live in the UK?
+                  </label>
+                  <select
+                    value={region}
+                    onChange={(e) => setRegion(e.target.value)}
+                    className="w-full bg-gray-50 border border-gray-300 rounded-xl p-3 text-xs text-gray-800 outline-none focus:ring-2 focus:ring-brand-orange"
+                  >
+                    <option>England (SEND Code of Practice)</option>
+                    <option>Scotland (ALN System)</option>
+                    <option>Wales (ALN Framework)</option>
+                    <option>Northern Ireland</option>
+                  </select>
                 </div>
+
                 <div>
-                  <label className="block text-xs font-semibold text-gray-600 mb-1">What stage of support are you in?</label>
-                  <input 
-                    type="text" 
-                    defaultValue="Thinking about requesting an assessment" 
-                    required
-                    className="w-full bg-gray-50 border border-gray-300 rounded-lg p-3 text-sm focus:ring-2 focus:ring-brand-orange outline-none text-gray-800"
-                  />
+                  <label className="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-1.5">
+                    2. What stage of support are you in?
+                  </label>
+                  <select
+                    value={stage}
+                    onChange={(e) => setStage(e.target.value)}
+                    className="w-full bg-gray-50 border border-gray-300 rounded-xl p-3 text-xs text-gray-800 outline-none focus:ring-2 focus:ring-brand-orange"
+                  >
+                    <option>Thinking about requesting an EHCP assessment</option>
+                    <option>Assessment request submitted / awaiting decision</option>
+                    <option>Received a draft EHCP (Checking Section F & I)</option>
+                    <option>Refusal to assess / Refusal to issue plan</option>
+                    <option>Preparing for Annual Review or Tribunal</option>
+                  </select>
                 </div>
+
                 <div>
-                  <label className="block text-xs font-semibold text-gray-600 mb-1">What is your biggest immediate concern?</label>
-                  <input 
-                    type="text" 
-                    defaultValue="School refusing to support / apply" 
-                    required
-                    className="w-full bg-gray-50 border border-gray-300 rounded-lg p-3 text-sm focus:ring-2 focus:ring-brand-orange outline-none text-gray-800"
-                  />
+                  <label className="block text-xs font-bold text-brand-navy uppercase tracking-wider mb-1.5">
+                    3. What is your biggest immediate concern?
+                  </label>
+                  <select
+                    value={concern}
+                    onChange={(e) => setConcern(e.target.value)}
+                    className="w-full bg-gray-50 border border-gray-300 rounded-xl p-3 text-xs text-gray-800 outline-none focus:ring-2 focus:ring-brand-orange"
+                  >
+                    <option>School refusing to support or apply</option>
+                    <option>Local authority exceeding statutory 6-week deadline</option>
+                    <option>Unsuitable school placement offered (Section I)</option>
+                    <option>Lack of social care / overnight respite provision</option>
+                  </select>
                 </div>
-                <button 
-                  type="submit" 
-                  className="w-full bg-brand-navy hover:bg-blue-900 text-white font-semibold py-3 rounded-xl text-sm transition-colors shadow-md flex items-center justify-center space-x-2"
+
+                <button
+                  type="submit"
+                  className="w-full bg-brand-navy hover:bg-brand-orange text-white font-semibold py-3.5 rounded-xl text-xs transition-colors shadow-md flex items-center justify-center space-x-2 cursor-pointer mt-2"
                 >
                   <span>Get My Custom Roadmap</span>
                   <span>→</span>
                 </button>
               </form>
+            ) : (
+              <div className="space-y-6">
+                <div className="bg-blue-50 border border-blue-200 p-5 rounded-2xl space-y-3">
+                  <span className="text-[10px] font-bold text-brand-orange uppercase tracking-wider">Your Diagnostic Result</span>
+                  <h3 className="text-lg font-extrabold text-brand-navy leading-snug">Action Plan: EHCP Assessment Trigger</h3>
+                  <p className="text-xs text-gray-700 leading-relaxed">
+                    Based on your location (<strong>{region}</strong>) and current status (<strong>{stage}</strong>), parents do not need to wait for school consent to request an assessment directly from the Local Authority.
+                  </p>
+                  <p className="text-[11px] text-gray-500 italic border-t border-blue-100 pt-2">
+                    Primary concern noted: {concern}
+                  </p>
+                </div>
+
+                <div className="space-y-2 text-xs text-gray-700">
+                  <h4 className="font-bold text-brand-navy">Recommended Next Steps:</h4>
+                  <ul className="space-y-1.5 list-disc pl-4 text-gray-600">
+                    <li>Download our free draft letter template for requesting an assessment.</li>
+                    <li>Gather medical, therapist, and school report evidence.</li>
+                    <li>Consider a 1:1 case review with a SEND Social Worker to draft Section F provision requirements.</li>
+                  </ul>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-3 pt-2 border-t border-gray-100">
+                  <Link
+                    href="/guidance/ehcp-assessments"
+                    className="flex-1 text-center bg-brand-orange hover:bg-orange-600 text-white font-semibold py-2.5 rounded-xl text-xs transition-all shadow"
+                  >
+                    View Assessment Templates
+                  </Link>
+                  <Link
+                    href="/consultation"
+                    className="flex-1 text-center bg-gray-100 hover:bg-gray-200 text-brand-navy font-semibold py-2.5 rounded-xl text-xs transition-all"
+                  >
+                    Book 1:1 Social Worker
+                  </Link>
+                </div>
+
+                <div className="text-center pt-1">
+                  <button
+                    type="button"
+                    onClick={() => setCompleted(false)}
+                    className="text-[11px] text-gray-500 hover:text-brand-orange underline font-medium cursor-pointer"
+                  >
+                    ← Start over with different answers
+                  </button>
+                </div>
+              </div>
             )}
           </div>
 
@@ -178,7 +235,7 @@ export default function GuidanceHubPage() {
               <p className="text-xs text-gray-500">Download our free template letters checked by SEND legal experts.</p>
             </div>
           </div>
-          <Link href="/contact" className="bg-brand-navy hover:bg-blue-900 text-white font-semibold px-5 py-2.5 rounded-xl text-xs transition-colors whitespace-nowrap">
+          <Link href="/guidance/ehcp-assessments" className="bg-brand-navy hover:bg-brand-orange text-white font-semibold px-5 py-2.5 rounded-xl text-xs transition-colors whitespace-nowrap">
             Get Template Letters
           </Link>
         </div>

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 import Link from 'next/link';
 
@@ -25,17 +26,15 @@ export default function Navbar() {
       {/* Main Navbar */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2">
         {/* Logo */}
-        <Link href="/guidance" className="flex items-center space-x-2 sm:space-x-3 shrink-0">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 bg-brand-navy rounded-lg flex items-center justify-center text-white font-black text-xs sm:text-sm shadow">
-            EH
-          </div>
-          <div>
-            <span className="text-base sm:text-lg font-extrabold text-brand-navy tracking-tight block leading-none">
-              EHCP Helper
-            </span>
-            <span className="text-[9px] sm:text-[10px] text-gray-500 font-medium block mt-0.5">
-              UK Special Needs Navigator
-            </span>
+        <Link href="/guidance" className="flex items-center shrink-0">
+          <div className="relative w-28 h-10 sm:w-36 sm:h-12 shrink-0">
+            <Image
+              src="https://tajora.co.uk/wp-content/uploads/2026/10/tajora-up-080ce7.svg"
+              alt="Tajora Logo"
+              fill
+              className="object-contain object-left"
+              priority
+            />
           </div>
         </Link>
 

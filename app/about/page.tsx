@@ -153,8 +153,8 @@ export default function AboutEHCPsPage() {
           {allSections.map((sec, idx) => (
             <div
               key={idx}
-              className={`p-6 flex flex-col sm:flex-row sm:items-start justify-between gap-4 transition-colors ${
-                sec.highlight ? "bg-orange-50/50" : "hover:bg-gray-50/50"
+              className={`p-6 flex flex-col sm:flex-row sm:items-start justify-between gap-4 transition-colors
+                 "bg-orange-50/50" : "hover:bg-gray-50/50"
               }`}
             >
               <div className="space-y-2 flex-grow">
@@ -162,7 +162,7 @@ export default function AboutEHCPsPage() {
                   <span className="text-sm font-extrabold text-brand-navy bg-gray-100 px-2.5 py-0.5 rounded-md">
                     {sec.code}
                   </span>
-                  <h3 className={`text-base font-bold ${sec.highlight ? "text-brand-orange" : "text-brand-navy"}`}>
+                  <h3 className={`text-base font-bold  "text-brand-orange" : "text-brand-navy"}`}>
                     {sec.title}
                   </h3>
                   <span className={`text-[10px] font-semibold px-2.5 py-0.5 rounded-full ${sec.badgeColor}`}>

@@ -73,6 +73,14 @@ export default function GuidanceHubPage() {
                 <p className="text-xs text-gray-500 font-medium">Expert social workers</p>
               </div>
             </div>
+            <div className="flex flex-wrap gap-4 pt-4">
+              <Link href="/support-checker" className="bg-brand-orange hover:bg-orange-600 text-white font-semibold px-12 py-3 rounded-xl text-xs transition-all shadow">
+                Start the free Support Checker
+              </Link>
+              <Link href="/consultation" className="bg-gray-100 hover:bg-gray-200 text-brand-navy font-semibold px-6 py-3 rounded-xl text-xs transition-all">
+                Meet Our Social Work team
+              </Link>
+            </div>
           </div>
 
           {/* Right Support Checker Widget */}

@@ -65,7 +65,7 @@ export default function Navbar() {
             href="/consultation"
             className="bg-brand-orange hover:bg-orange-600 text-white font-bold px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl text-[11px] sm:text-xs transition-colors shadow flex items-center space-x-1.5 whitespace-nowrap"
           >
-            <span>📅</span>
+            {/* <span>📅</span> */}
             <span className="hidden xs:inline sm:inline">Book 1:1 Social Worker</span>
             <span className="xs:hidden sm:hidden">Book 1:1</span>
           </Link>

@@ -47,9 +47,9 @@ export default function AboutEHCPsPage() {
       title: "Special Educational Provision (Critical)",
       desc: "Specifies the extra help required to meet the SEN in Section B. Must be highly specific, quantified (e.g., hours of support, staff ratios), and legally binding on the Local Authority.",
       badge: "Legally Binding & Appealable",
-      badgeColor: "bg-red-100 text-red-700 font-bold",
+      badgeColor: "bg-blue-50 text-brand-blue",
       appealable: true,
-      highlight: true,
+      // highlight: true,
     },
     {
       code: "Section G",

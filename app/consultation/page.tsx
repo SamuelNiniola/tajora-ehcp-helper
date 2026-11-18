@@ -70,7 +70,7 @@ export default function ConsultationPage() {
       <section className="bg-gradient-to-b from-blue-50/50 to-white py-12 px-4 sm:px-6 lg:px-8 border-b border-gray-100 text-center">
         <div className="max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center space-x-2 bg-orange-50 text-brand-orange px-3 py-1 rounded-full text-xs font-semibold">
-            <span>🛡️ Registered Social Workers & SEND Advocates</span>
+            <span>Registered Social Workers & SEND Advocates</span>
           </div>
           <h1 className="text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">
             Book a 1:1 Video Consultation with a SEND Social Worker
@@ -233,7 +233,7 @@ export default function ConsultationPage() {
                   </div>
 
                   <button className="mt-6 w-full bg-brand-orange hover:bg-orange-600 text-white font-bold py-3 rounded-xl text-xs transition-all shadow flex items-center justify-center space-x-2">
-                    <span>📅 Book Consultation</span>
+                    <span>Book Consultation</span>
                   </button>
                 </div>
               </div>
@@ -251,7 +251,7 @@ export default function ConsultationPage() {
             We believe every child is entitled to support, regardless of their family&apos;s financial situation. If you are currently receiving Universal Credit, Carer&apos;s Allowance, or are on a low income, you can apply for our heavily subsidized sliding-scale consultation rate starting at £10 per session.
           </p>
           <div className="pt-2">
-            <Link href="/contact" className="inline-flex items-center space-x-2 bg-brand-navy hover:bg-blue-900 text-white font-semibold px-6 py-3 rounded-xl text-xs transition-colors shadow">
+            <Link href="/contact" className="inline-flex items-center space-x-2 bg-brand-navy hover:bg-brand-orange text-white font-semibold px-6 py-3 rounded-xl text-xs transition-colors shadow">
               <span>Apply for sliding scale rate</span>
               <span>→</span>
             </Link>

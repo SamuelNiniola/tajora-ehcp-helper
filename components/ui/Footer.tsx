@@ -21,30 +21,28 @@ export default function Footer() {
           <p className="text-gray-300 text-xs leading-relaxed pr-6">
             Providing high-quality, free and accessible special needs advocacy resources across the UK.
           </p>
-          <p className="text-[10px] text-gray-400">
-            &copy; 2026 Tajora EHCP Helper Ltd. All rights reserved.
-          </p>
         </div>
 
         {/* Col 2: Free Guidance */}
         <div className="md:col-span-3 space-y-3">
-          <h4 className="font-bold text-xs uppercase tracking-wider text-white">Free Guidance</h4>
+          <h4 className="font-bold text-xs uppercase tracking-wider text-white">Quick Links</h4>
           <ul className="space-y-2 text-xs text-gray-300">
-            <li><Link href="/guidance" className="hover:text-white">EHCP Assessment Request</Link></li>
-            <li><Link href="/guidance" className="hover:text-white">Drafting Section F & I</Link></li>
-            <li><Link href="/guidance" className="hover:text-white">DLA Application Tips</Link></li>
-            <li><Link href="/guidance" className="hover:text-white">Appealing LA decisions</Link></li>
+            <li><Link href="/about" className="hover:text-white">About Tajora</Link></li>
+            <li><Link href="/contact" className="hover:text-white">Contact Us</Link></li>
+            <li><Link href="/guidance" className="hover:text-white">Privacy & Terms</Link></li>
+            <li><Link href="/ehcp-assessment" className="hover:text-white">EHCP Assessment Request</Link></li>
+
           </ul>
         </div>
 
         {/* Col 3: Our Services */}
         <div className="md:col-span-3 space-y-3">
-          <h4 className="font-bold text-xs uppercase tracking-wider text-white">Our Services</h4>
+          <h4 className="font-bold text-xs uppercase tracking-wider text-white">Contact Info</h4>
           <ul className="space-y-2 text-xs text-gray-300">
-            <li><Link href="/consultation" className="hover:text-white">Book 1:1 Social Worker</Link></li>
-            <li><Link href="/consultation" className="hover:text-white">Document Review Service</Link></li>
-            <li><Link href="/consultation" className="hover:text-white">Tribunal Prep Package</Link></li>
-            <li><Link href="/sliding-scale" className="hover:text-white">Sliding Scale Assistance</Link></li>
+            <li><Link href="#" className="hover:text-white font-bold text-xs">General Enquiries</Link></li>
+            <li><Link href="mailto:contact@tajora.co.uk" className="hover:text-white">contact@tajora.co.uk</Link></li>
+            <li><Link href="#" className="hover:text-white font-bold text-xs">Official Charity</Link></li>
+            <li><Link href="/sliding-scale" className="hover:text-white">Her Special Strength</Link></li>
           </ul>
         </div>
 
@@ -54,13 +52,18 @@ export default function Footer() {
           <p className="text-[11px] text-gray-300 leading-relaxed">
             We are an independent advocacy and social work network. We are not a public body or affiliated with local authorities.
           </p>
-          <div className="flex space-x-3 pt-2 text-sm">
+          {/* <div className="flex space-x-3 pt-2 text-sm">
             <span className="cursor-pointer hover:opacity-80">🛡️</span>
             <span className="cursor-pointer hover:opacity-80">🔒</span>
             <span className="cursor-pointer hover:opacity-80">📄</span>
-          </div>
+          </div> */}
         </div>
 
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 border-t border-white-700 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-[10px] text-gray-400 text-center">
+            &copy; 2026 Tajora EHCP Helper Ltd. All rights reserved.
+          </p>
       </div>
     </footer>
   );

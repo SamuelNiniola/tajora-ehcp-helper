@@ -103,7 +103,7 @@ export default function EHCPAssessmentsPage() {
         </div>
       </section>
 
-      {/* Step-by-Step Guide Section */}
+      {/* Step-by-Step Guide Section
       <section className="bg-white p-8 rounded-3xl border border-gray-200 shadow-sm space-y-6">
         <h2 className="text-xl font-extrabold text-brand-navy">Step-by-Step Assessment Process</h2>
         
@@ -132,7 +132,7 @@ export default function EHCPAssessmentsPage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Call to Action Footer */}
       <section className=" bg-brand-navy text-white p-8 rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md">

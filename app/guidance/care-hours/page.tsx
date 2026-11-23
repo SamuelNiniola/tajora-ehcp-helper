@@ -68,7 +68,7 @@ export default function EHCPAssessmentsPage() {
 
               {/* Direct Google Drive Download Link */}
               <a
-                href="https://drive.google.com/file/d/1K5GuZbCpRx73h1uQE_5MX6irkortMKz6/view?usp=sharingE"
+                href="https://drive.google.com/file/d/1vBl452Dx8Lx6GH_5lU3c2lpggoZTw_KQ/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full bg-brand-navy hover:bg-brand-orange text-white font-semibold py-2.5 rounded-xl text-xs transition-colors shadow flex items-center justify-center space-x-2 cursor-pointer no-underline"

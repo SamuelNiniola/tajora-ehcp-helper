@@ -31,7 +31,7 @@ export default function EHCPAssessmentsPage() {
           EHCP Assessments & Draft Letter Templates
         </h1>
         <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-3xl">
-          Parents and legal guardians have the direct statutory right under Section 36 of the Children and Families Act 2014 to request an Education, Health and Care Needs Assessment (EHCP) independently—even if the school disagrees.
+          Parents and legal guardians have the direct statutory right under Section 36 of the Children and Families Act 2014 to request an Education, Health and Care Needs Assessment (EHCP) independently, even if the school disagrees.
         </p>
       </div>
 
@@ -53,28 +53,32 @@ export default function EHCPAssessmentsPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           
           {/* Template Card 1 */}
-          <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm space-y-4 flex flex-col justify-between">
-            <div className="space-y-2">
-              <div className="w-10 h-10 bg-orange-50 text-brand-orange rounded-xl flex items-center justify-center font-bold">
-                📄
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm space-y-4 flex flex-col justify-between">
+              <div className="space-y-2">
+                <div className="w-10 h-10 bg-orange-50 text-brand-orange rounded-xl flex items-center justify-center font-bold">
+                  📄
+                </div>
+                <h3 className="font-bold text-brand-navy text-sm sm:text-base">
+                  Initial EHCP Needs Assessment Request Letter
+                </h3>
+                <p className="text-xs text-gray-600 leading-relaxed">
+                  Use this template to formally request your Local Authority to initiate an Education, Health and Care Needs Assessment for your child. Fully aligned with statutory 6-week decision timelines.
+                </p>
               </div>
-              <h3 className="font-bold text-brand-navy text-sm sm:text-base">
-                Initial EHCP Needs Assessment Request Letter
-              </h3>
-              <p className="text-xs text-gray-600 leading-relaxed">
-                Use this template to formally request your Local Authority to initiate an Education, Health and Care Needs Assessment for your child. Fully aligned with statutory 6-week decision timelines.
-              </p>
-            </div>
-            <button
-              onClick={() => handleDownload('Initial EHCP Assessment Request Letter')}
-              className="w-full bg-brand-navy hover:bg-brand-orange text-white font-semibold py-2.5 rounded-xl text-xs transition-colors shadow flex items-center justify-center space-x-2 cursor-pointer"
-            >
-              <span>Download Template (.docx)</span>
+
+              {/* Direct Google Drive Download Link */}
+              <a
+                href="https://drive.google.com/file/d/1K5GuZbCpRx73h1uQE_5MX6irkortMKz6/view?usp=sharingE"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full bg-brand-navy hover:bg-brand-orange text-white font-semibold py-2.5 rounded-xl text-xs transition-colors shadow flex items-center justify-center space-x-2 cursor-pointer no-underline"
+              >
+              <span>Download Template</span>
               <span>↓</span>
-            </button>
+            </a>
           </div>
 
-          {/* Template Card 2 */}
+          {/* Template Card 2
           <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm space-y-4 flex flex-col justify-between">
             <div className="space-y-2">
               <div className="w-10 h-10 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center font-bold">
@@ -91,10 +95,10 @@ export default function EHCPAssessmentsPage() {
               onClick={() => handleDownload('Refusal to Assess Appeal Letter')}
               className="w-full bg-brand-navy hover:bg-brand-orange text-white font-semibold py-2.5 rounded-xl text-xs transition-colors shadow flex items-center justify-center space-x-2 cursor-pointer"
             >
-              <span>Download Template (.docx)</span>
+              <span>Download Template</span>
               <span>↓</span>
             </button>
-          </div>
+          </div> */}
 
         </div>
       </section>

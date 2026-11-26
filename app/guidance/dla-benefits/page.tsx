@@ -136,7 +136,7 @@ export default function EHCPAssessmentsPage() {
       {/* Call to Action Footer */}
       <section className=" bg-brand-navy text-white p-8 rounded-3xl flex flex-col sm:flex-row items-center justify-between gap-6 shadow-md">
         <div className="space-y-2 text-center sm:text-left">
-          <h3 className="text-lg font-bold">Need a professional social worker to review your letter?</h3>
+          <h3 className="text-lg font-bold">Need a professional social worker to help with filling out the DLA form?</h3>
           <p className="text-xs text-blue-200">Book a 1:1 case consultation to ensure your application meets all legal criteria.</p>
         </div>
         <Link

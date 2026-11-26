@@ -25,13 +25,13 @@ export default function EHCPAssessmentsPage() {
       {/* Hero Header */}
       <div className="space-y-4">
         <span className="text-[10px] font-bold uppercase tracking-wider bg-blue-50 text-brand-blue px-3 py-1 rounded-md">
-          Statutory Guidance • SEND Code of Practice 2015
+          PARENT & CARER GUIDE • ENGLAND
         </span>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">
-          EHCP Assessments & Draft Letter Templates
+          Appeals & Tribunals
         </h1>
         <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-3xl">
-          Parents and legal guardians have the direct statutory right under Section 36 of the Children and Families Act 2014 to request an Education, Health and Care Needs Assessment (EHCP) independently, even if the school disagrees.
+          Appealing a refusal to carry out an EHC needs assessment, the content of an EHCP, or a school placement (Section I) at the First-tier Tribunal (SEND) in England. Appeals must be registered by the later of two months from the council decision letter or one month from the mediation certificate
         </p>
       </div>
 
@@ -45,9 +45,9 @@ export default function EHCPAssessmentsPage() {
 
       {/* Templates Section */}
       <section className="space-y-6">
-        <h2 className="text-xl font-extrabold text-brand-navy">Free Downloadable Request Letters</h2>
+        <h2 className="text-xl font-extrabold text-brand-navy">Appeal Forms, Guidance & Case Preparation</h2>
         <p className="text-xs text-gray-500">
-          Click any template below to download legal-grade letters prepared by specialist SEND consultants.
+          Covers mediation advice (and the Section I-only exception), appeal forms (SEND35a for refusal to assess; SEND35 for content or Section I placement), evidence and bundle preparation, hearings, and next steps.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -59,10 +59,10 @@ export default function EHCPAssessmentsPage() {
                   📄
                 </div>
                 <h3 className="font-bold text-brand-navy text-sm sm:text-base">
-                  Initial EHCP Needs Assessment Request Letter
+                  Refusal to Assess Appeal Guide (Form SEND35a)
                 </h3>
                 <p className="text-xs text-gray-600 leading-relaxed">
-                  Use this template to formally request your Local Authority to initiate an Education, Health and Care Needs Assessment for your child. Fully aligned with statutory 6-week decision timelines.
+                  Guidance on appealing a council refusal to carry out an EHC needs assessment using SEND35a, contacting a mediation adviser within two months (issued in about three working days if you decline mediation), stating what you want changed, and registering before the deadline.
                 </p>
               </div>
 
@@ -73,32 +73,32 @@ export default function EHCPAssessmentsPage() {
                 rel="noopener noreferrer"
                 className="w-full bg-brand-navy hover:bg-brand-orange text-white font-semibold py-2.5 rounded-xl text-xs transition-colors shadow flex items-center justify-center space-x-2 cursor-pointer no-underline"
               >
-              <span>Download Template</span>
+              <span>Download Guide</span>
               <span>↓</span>
             </a>
           </div>
 
-          {/* Template Card 2
+          {/* Template Card 2 */}
           <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm space-y-4 flex flex-col justify-between">
             <div className="space-y-2">
               <div className="w-10 h-10 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center font-bold">
                 ⚖️
               </div>
               <h3 className="font-bold text-brand-navy text-sm sm:text-base">
-                Response Letter to 'Refusal to Assess'
+                Section I School Placement Appeal Guide (Form SEND35)
               </h3>
               <p className="text-xs text-gray-600 leading-relaxed">
-                If your Local Authority refuses to assess your child, use this pre-formatted letter to challenge their decision within the statutory pre-mediation window.
+                Guidance on appealing the school or setting named in Section I using SEND35 (noting no mediation certificate is required if appealing Section I only), covering suitability, why the council's school is unsuitable, evidence, cost, and parental preference, plus case bundles and hearings.
               </p>
             </div>
             <button
               onClick={() => handleDownload('Refusal to Assess Appeal Letter')}
               className="w-full bg-brand-navy hover:bg-brand-orange text-white font-semibold py-2.5 rounded-xl text-xs transition-colors shadow flex items-center justify-center space-x-2 cursor-pointer"
             >
-              <span>Download Template</span>
+              <span>Download Guide</span>
               <span>↓</span>
             </button>
-          </div> */}
+          </div>
 
         </div>
       </section>

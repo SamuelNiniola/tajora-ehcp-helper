@@ -25,13 +25,13 @@ export default function EHCPAssessmentsPage() {
       {/* Hero Header */}
       <div className="space-y-4">
         <span className="text-[10px] font-bold uppercase tracking-wider bg-blue-50 text-brand-blue px-3 py-1 rounded-md">
-          Statutory Guidance • SEND Code of Practice 2015
+          PARENT & CARER GUIDE • ENGLAND
         </span>
         <h1 className="text-3xl sm:text-4xl font-extrabold text-brand-navy tracking-tight">
-          EHCP Assessments & Draft Letter Templates
+          Care Hours & Social Care
         </h1>
         <p className="text-sm sm:text-base text-gray-600 leading-relaxed max-w-3xl">
-          Parents and legal guardians have the direct statutory right under Section 36 of the Children and Families Act 2014 to request an Education, Health and Care Needs Assessment (EHCP) independently, even if the school disagrees.
+          How to request a Children's Social Care Assessment and secure overnight respite or direct payments. Under section 17 of the Children Act 1989, a disabled child is legally a child in need, and you do not need an EHCP or a diagnosis to ask.
         </p>
       </div>
 
@@ -45,9 +45,9 @@ export default function EHCPAssessmentsPage() {
 
       {/* Templates Section */}
       <section className="space-y-6">
-        <h2 className="text-xl font-extrabold text-brand-navy">Free Downloadable Request Letters</h2>
+        <h2 className="text-xl font-extrabold text-brand-navy">Request Letter & Assessment Guidance</h2>
         <p className="text-xs text-gray-500">
-          Click any template below to download legal-grade letters prepared by specialist SEND consultants.
+          Use the draft letter and guidance below to request a Children in Need assessment and a parent carer needs assessment in writing, prepare a two-week care diary, and follow up if support is delayed or refused.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -59,10 +59,10 @@ export default function EHCPAssessmentsPage() {
                   📄
                 </div>
                 <h3 className="font-bold text-brand-navy text-sm sm:text-base">
-                  Initial EHCP Needs Assessment Request Letter
+                  Draft Letter: Request for Assessment
                 </h3>
                 <p className="text-xs text-gray-600 leading-relaxed">
-                  Use this template to formally request your Local Authority to initiate an Education, Health and Care Needs Assessment for your child. Fully aligned with statutory 6-week decision timelines.
+                  Use this template to write to the Head of Children with Disabilities Service to request a section 17 Children in Need assessment, a parent carer needs assessment, and consideration of short breaks, overnight respite, and direct payments (including section 2 of the Chronically Sick and Disabled Persons Act 1970).
                 </p>
               </div>
 
@@ -78,27 +78,27 @@ export default function EHCPAssessmentsPage() {
             </a>
           </div>
 
-          {/* Template Card 2
+          {/* Template Card 2 */}
           <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm space-y-4 flex flex-col justify-between">
             <div className="space-y-2">
               <div className="w-10 h-10 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center font-bold">
                 ⚖️
               </div>
               <h3 className="font-bold text-brand-navy text-sm sm:text-base">
-                Response Letter to 'Refusal to Assess'
+                Step-by-Step Guide: Care Hours, Overnight Respite & Direct Payments
               </h3>
               <p className="text-xs text-gray-600 leading-relaxed">
-                If your Local Authority refuses to assess your child, use this pre-formatted letter to challenge their decision within the statutory pre-mediation window.
+                Covers finding the right council team, keeping a two-week care diary and weekly care hours, the 1-working-day referral decision and 45-working-day assessment timeline, Child in Need plans, overnight respite (and EHCP Section H1), direct payments, and next steps if refused or delayed.
               </p>
             </div>
             <button
-              onClick={() => handleDownload('Refusal to Assess Appeal Letter')}
+              onClick={() => handleDownload('Step-by-Step Guide: Care Hours, Overnight Respite & Direct Payments')}
               className="w-full bg-brand-navy hover:bg-brand-orange text-white font-semibold py-2.5 rounded-xl text-xs transition-colors shadow flex items-center justify-center space-x-2 cursor-pointer"
             >
               <span>Download Template</span>
               <span>↓</span>
             </button>
-          </div> */}
+          </div>
 
         </div>
       </section>

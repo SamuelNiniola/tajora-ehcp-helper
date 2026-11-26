@@ -78,7 +78,7 @@ export default function EHCPAssessmentsPage() {
             </a>
           </div>
 
-          {/* Template Card 2 */}
+          {/* Template Card 2
           <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm space-y-4 flex flex-col justify-between">
             <div className="space-y-2">
               <div className="w-10 h-10 bg-blue-50 text-brand-blue rounded-xl flex items-center justify-center font-bold">
@@ -98,7 +98,7 @@ export default function EHCPAssessmentsPage() {
               <span>Download Guide</span>
               <span>↓</span>
             </button>
-          </div>
+          </div> */}
 
         </div>
       </section>
